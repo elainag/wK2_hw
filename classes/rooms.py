@@ -21,9 +21,10 @@ class Rooms:
     def check_playlist(self):
         return len(self.playlist)
 
-    # def what_songs_are_in_the_playlist(self):
+    # def check_playlist(self):
+    #     if not self.playlist:
+    #         return self.playlist
 
     # def add_song_to_playlist(self, song_to_add):
     #     self.playlist.append(song_to_add)
-    #     playlist1 = self.playlist
-    #     return "songs1", "artist1"
+    #     return self.playlist

@@ -8,6 +8,7 @@ from classes.songs import Songs
 class TestRooms(unittest.TestCase):
     def setUp(self):
         self.rooms = Rooms("room1", 5)
+        # self.playlist = Rooms.playlist("songs1", "artist1")
 
     def test_room_by_name(self):
         self.assertEqual("room1", self.rooms.name)
@@ -33,7 +34,6 @@ class TestRooms(unittest.TestCase):
         self.assertEqual(0, self.rooms.check_playlist())
 
     # def test_add_song_to_playlist(self):
-    #     song_to_add = Songs("songs1", "artist1")
+    #     song_to_add = Songs("song1", "artist1")
     #     self.rooms.add_song_to_playlist(song_to_add)
-    #     playlist1 = self.
-    #     self.assertEqual(("songs1", "artist1"), self.rooms.playlist1)
+    #     self.assertEqual(("songs1"), self.rooms.playlist)

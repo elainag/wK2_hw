@@ -10,7 +10,7 @@ class TestSongs(unittest.TestCase):
         self.songs2 = Songs("song2", "artist2")
 
     def test_get_song_by_name(self):
-        self.assertEqual("song1", self.songs1.name)
+        self.assertEqual("song1", self.songs1.song_name)
 
     def test_find_artist_by_name(self):
         self.assertEqual("artist2", self.songs2.artist)
